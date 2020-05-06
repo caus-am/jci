@@ -1,0 +1,12 @@
+These bash scripts can be used to query the clingo ASP solver and are part of 
+this implementation of ASD. The method used here is described in Magliacane
+et al. (2016).
+
+@InProceedings{MagliacaneClaassenMooij_NIPS_16,
+  author =    {Sara Magliacane and Tom Claassen and Joris M. Mooij},
+  title =     {Ancestral Causal Inference},
+  booktitle = {Advances in Neural Information Processing Systems 29 ({NIPS} 2016)},
+  address =   {Barcelona, Spain},
+  pages =     {4466--4474},
+  year =      {2016},
+}

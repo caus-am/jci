@@ -1,0 +1,3 @@
+#const nrnodes = 2.
+inode(0).
+dep(0,1,0,0,0,10000).

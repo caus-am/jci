@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Adapt this script according to your local setup to invoke Rscript in the correct way
+#
+if [ -e /datastore ]; then
+  R_LIBS_USER=/datastore/jmooij1/R/x86_64-redhat-linux-gnu-library/3.5 Rscript --vanilla "$@"
+elif [ -e /home/jorism/R/x86_64-pc-linux-gnu-library/3.5tmp ]; then
+  R_LIBS_USER=/home/jorism/R/x86_64-pc-linux-gnu-library/3.5tmp Rscript --vanilla "$@"
+else
+  Rscript --vanilla "$@"
+fi

@@ -1,0 +1,6 @@
+#const nrnodes = 3.
+inode(0).
+inode(1).
+
+edge(0,2).
+:-edge(1,2).

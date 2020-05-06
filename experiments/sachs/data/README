@@ -1,0 +1,15 @@
+sachs-jci-noICAM.csv contains the result of preprocessing the raw data from the
+Sachs et al. 2005 paper by the sachs_pool_noICAM.R script. For the input of
+that script, we used a .csv file obtained by concatenating all the raw flow
+cytometry data as distributed by Sachs et al. (2005).
+
+This is the reference to the Sachs et al. (2005) paper:
+
+@article{SPP05,
+  title     = {Causal protein-signaling networks derived from multiparameter single-cell data},
+  author    = {Karen Sachs and Omar Perez and Dana Pe'er and Douglas A. Lauffenburger and Garry P. Nolan},
+  journal   = {Science},
+  volume    = 308,
+  issue     = 5721,
+  year      = 2005
+}

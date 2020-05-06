@@ -1,0 +1,44 @@
+This folder contains the ASP code for the implementation of JCI-ASD, based originally on the code of Hyttinen et al. (2014).
+Here is a quick explanation of how the ASP files can be used and combined.
+
+1. Include one of the files corresponding to separations and graph type:
+	asd_acyclic.pl:			d-separation encoding (acyclic)
+	asd_acyclic_sufficient.pl:	d-separation encoding (acyclic, no latent confounders)
+	asd_cyclic.pl:			d-separation encoding (cyclic)
+	asd_sigma_cyclic.pl:		sigma-separation encoding (cyclic)
+
+2. Include one of the following files to generate the computation tree:
+	obs_comp_tree.pl:	observational-only computation tree (most suitable for JCI)
+	partial_comp_tree.pl:	partial computation tree, suitable for perfect interventions (fast)
+	full_comp_tree.pl:	full computation tree, suitable for perfect interventions (slow)
+
+3a. Include the set of JCI assumptions that should be made:
+	jci123.pl:		JCI assumptions 1,2,3 (all JCI assumptions)
+	jci12indc.pl:		JCI assumptions 1,2, and assume independent context variables
+3b. Or, add a combination of:
+	jci1.pl:                JCI assumption 1 (exogenous context nodes)
+	jci2.pl:                JCI assumption 2 (randomization)
+	jci3.pl:                JCI assumption 3 (purely confounded context variables)
+
+4. Set the following global constants accordingly:
+	#const nrnodes=6.  % total number of nodes
+	inode(0..2).       % nodes 0,1,2 are context nodes, all other nodes (3,4,5) are then considered as system nodes
+
+For some examples, see the folder ../../../examples.
+The references to the two papers describing ASD are:
+
+@inproceedings{HEJ2014,
+  author    = {Antti Hyttinen and Frederick Eberhardt and Matti J{\"{a}}rvisalo},
+  title     = {Constraint-based Causal Discovery: Conflict Resolution with Answer Set Programming},
+  booktitle = {Proceedings of the 13th Conference on Uncertainty in Artificial Intelligence ({UAI} 2014)},
+  address   = {Quebec City, Quebec, Canada},
+  pages     = {340--349},
+  year      = {2014},
+}
+
+@inproceedings{ForreMooij_UAI_18,
+  title     = {Constraint-based Causal Discovery for Non-Linear Structural Causal Models with Cycles and Latent Confounders},
+  author    = {Patrick Forr{\'e} and Joris M. Mooij},
+  booktitle = {Proceedings of the 34th Annual Conference on {U}ncertainty in {A}rtificial {I}ntelligence ({UAI} 2018)},
+  year      = 2018,
+}
