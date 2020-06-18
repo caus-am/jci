@@ -3,9 +3,9 @@
 1. This code belongs to the following paper:
 
 	'Joint Causal Inference from Multiple Contexts'
-	by Joris M. Mooij, S. Magliacane, T. Claassen
-	https://arxiv.org/abs/1611.10351
-	To appear in Journal of Machine Learning Research, 2020
+	by Joris M. Mooij, Sara Magliacane, Tom Claassen
+	Journal of Machine Learning Research 21(99):1-108, 2020
+	http://jmlr.org/papers/v21/17-123.html
 
 2. Use of this source code is governed by a BSD-style license that can be found
 in the LICENSE file. This applies to all code except for that in the file
